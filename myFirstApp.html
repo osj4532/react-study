@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="urf-8">
+    <title>React! React! React!</title>
+    <!-- React 라이브러리 추가 -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <!-- React DOM 라이브러리 추가 -->
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <!-- JSX를 자바스크립트로 변환해준다. -->
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+    <style>
+        #container{
+            padding: 50px;
+            background-color: #EEE;
+        }
+        #container h1{
+            font-size: 144px;
+            font-family: sans-serif;
+            color: #0080A8;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script type="text/babel">
+    /*
+        render 메소드는 두개의 인자를 받는다.
+        1. 화면에 출력하고 싶은 HTML(JSX)
+        2. 그 JSX를 렌더링해 보여줄 DOM 안의 위치
+    */
+        const destination = document.getElementById('container');
+
+        ReactDOM.render(
+            <h1>Osj4532@daum.net</h1>,
+            //document.querySelector('#container')
+            destination
+        );
+    </script>    
+</body>
+</html>
